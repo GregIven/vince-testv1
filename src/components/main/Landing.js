@@ -10,7 +10,12 @@ const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 140vh;
+    height: auto;
+    min-height: 150vh;
+    min-width: 95vw;
+    margin-bottom: 15px;
+    margin-top: -80px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,13 +24,21 @@ const MainContainer = styled.div`
     background-image: url(${ImageBG});
 
     position: relative;
+
+    @media (min-width: 700px) {
+        /* width: 100vw; */
+        .landPageText {
+            height: 25vh;
+            width: 25vw;
+        }
+    }
 `
 
 const LandPageText = styled.h1`
     /* text-align: right; */
     position: absolute;
-    height: 187px;
-    width: 387px;
+    height: 150px;
+    width: 350px;
     margin: 5.5px 5.5px 5.5px 5.5px;
     bottom: 0px;
     right: 70px;

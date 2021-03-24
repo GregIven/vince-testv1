@@ -11,19 +11,34 @@ import cessna from '../../images/Cessna/cessna-logo.svg';
 import bombadier from '../../images/Bombadier/bombardier-vector-logo.svg';
 
 const ManuListContainer = styled.div`
-    width: 100%;
-    height: 400px;
+    width: 95%;
+    height: auto;
+    min-height: 100%;
     box-sizing: border-box;
+    position: relative;
+    margin-bottom: 5px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+
 `
 
-const ManuListHeader = styled.h1`
-
+const ManuListHeader = styled.p`
+    align-self: center;
+    font-size: x-large;
+    margin: 5px;
 `
 
 const ManuListRow = styled.div`
     display: flex;
     flex-direct: row;
     justify-content: space-between;
+    margin-top: -25px;
+    margin-bottom: -25px;
+
 `
 
 const ManufactureList = () => {
@@ -32,27 +47,27 @@ const ManufactureList = () => {
             <ManuListHeader>Specialized in working with the following manufacturers</ManuListHeader>
             <ManuListRow>
                 <img src={beechcraft} alt='' width="25%" />
-                <img src={airbus} width="25%" />
-                <img src={gulfstream} width="25%" />
-                <img src={robinson} width="25%" />
+                <img src={airbus} alt='' width="25%" />
+                <img src={gulfstream} alt='' width="25%" />
+                <img src={robinson} alt='' width="25%" />
             </ManuListRow>
             <ManuListRow>
-                <img src={piper} width="25%" />
-                <img src={hawker} width="25%" />
-                <img src={cessna} width="25%" />
-                <img src={bombadier} width="25%" />
+                <img src={piper} alt='' width="25%" />
+                <img src={hawker} alt=''  width="25%" />
+                <img src={cessna} alt=''  width="25%" />
+                <img src={bombadier} alt='' width="25%" />
             </ManuListRow>
             <ManuListRow>
-                <img />
-                <img />
-                <img />
-                <img />
+                <img alt=''/>
+                <img alt=''/>
+                <img alt=''/>
+                <img alt=''/>
             </ManuListRow>
             <ManuListRow>
-                <img />
-                <img />
-                <img />
-                <img />
+                <img alt=''/>
+                <img alt=''/>
+                <img alt=''/>
+                <img alt=''/>
             </ManuListRow>
         </ManuListContainer>
     )

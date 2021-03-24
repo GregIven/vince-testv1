@@ -8,6 +8,7 @@ const Navigation = styled.nav`
     background-color: #fff;
     overflow: hidden;
     width: 100%;
+    min-width: 100%;
     height: 100px;
 
     box-shadow: 0 5px 20px -10px #000;
@@ -54,7 +55,7 @@ const Navbar = () => {
             <div className="nav-helper">
                 <LogoNav />
                 <h1 className="title">Alcance</h1>
-                <p1 className="subTitle">Parts for your aircraft</p1>
+                <p className="subTitle">Parts for your aircraft</p>
                 <ul>
                     <NavLink name="Start" />
                     <NavLink name="About Us" />
